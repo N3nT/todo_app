@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { Item } from './item';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,15 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class AppComponent {
   title = 'todo_app';
 
+  allTasks:Item[] = [
+    {title: 'asd', done: 'checked'},
+    {title: 'second', done: ''}
+  ]
+  
+  addItem(title: string){
+     this.allTasks.unshift({
+      title,
+      done: '',
+    });
+  }
 }

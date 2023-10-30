@@ -2,9 +2,9 @@
   <div class="addTask">
     <h1>ToDo-App</h1>
     <div class="addTaskWrap">
-      <input type="text" name="" id="" placeholder="Task title"><button>Add Task</button></div>
+      <input #newItem type="text" placeholder="Task title" (keyup.enter)="addItem(newItem.value);"><button (click)="addItem(newItem.value)">Add Task</button></div>
     </div>
   <div class="tasks">
-    
+      <div class='taskItem' *ngFor="let task of allTasks"><input type="checkbox" checked="{{task.done}}">{{task.title}}</div>
   </div>
 </div>
