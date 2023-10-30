@@ -1,0 +1,21 @@
+.wrap{
+    width: 700px;
+    height: 800px;
+}
+.addTask{
+    height: 150px;
+    input{
+        padding: 10px;
+    }
+    h1{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .addTaskWrap{
+        width: 70%;
+    }
+    button{
+        margin-left: 10px;
+        padding: 2px;
+    }
+}

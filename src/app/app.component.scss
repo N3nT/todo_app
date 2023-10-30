@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+// style
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3838;
+    height: 100vh;
+}
+.wrap{
+    background-color: #eeeeee;
+}
+.addTask{
+    width: 100%;
+    background-color: rgb(255, 62, 28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    input{
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        &:hover{
+            border: 1px solid black;
+        }
+        &:focus{
+            border: 1px solid black;
+            outline: none;
+        }
+    }
+    .addTaskWrap{
+        display: flex;
+    }
+    h1{
+        color: white;
+    }
+    button{
+        border: 2px solid white;
+        border-radius: 5px;
+        background-color: tomato;
+        color: white;
+        &:hover{
+            background-color: rgb(226, 81, 55);
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    @import "style/phones";
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    @import "style/tablets";
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    @import "style/laptops";
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    @import "style/desktops";
+}

@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 100vw;
+  background-color: #3a3838;
+}
+
+.wrap {
+  background-color: #b9b9b9;
+  margin: auto;
+  width: 900px;
+  height: 800px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=app.component.css.map */
