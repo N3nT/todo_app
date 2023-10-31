@@ -73,6 +73,20 @@ body{
             width: 20px;
             height: 20px;
         }
+        .taskItemImgWrap{
+            display: flex;
+            img{
+                width: 20px;
+                height: 20px;
+                &:first-child{
+                    margin-right: 15px;
+                }
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
+            }
+        }
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

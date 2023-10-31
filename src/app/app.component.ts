@@ -16,9 +16,12 @@ export class AppComponent {
   ]
   
   addItem(title: string){
-     this.allTasks.unshift({
+     this.allTasks.push({
       title,
       done: '',
     });
   }
-}
+
+  deleteItem(index: string){
+    this.allTasks.splice(parseInt(index),1);
+}}

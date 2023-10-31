@@ -5,6 +5,6 @@
       <input #newItem type="text" placeholder="Task title" (keyup.enter)="addItem(newItem.value);"><button (click)="addItem(newItem.value)">Add Task</button></div>
     </div>
   <div class="tasks">
-      <div class='taskItem' *ngFor="let task of allTasks"><input type="checkbox" checked="{{task.done}}">{{task.title}}</div>
+      <div class='taskItem' *ngFor="let task of allTasks; index as i"><input #checkbox type="checkbox" checked="{{task.done}}" value="{{i}}">{{i}} | {{task.title}} <div class="taskItemImgWrap"><img src="../assets/img/trash-can.png" alt="Trash Icon" (click)="deleteItem(checkbox.value)"><img src="../assets/img/pencil.png" alt=""></div></div>
   </div>
 </div>
