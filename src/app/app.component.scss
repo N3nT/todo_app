@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "style/desktops";
 // style
 *{
     padding: 0;
@@ -15,6 +16,7 @@ body{
 }
 .wrap{
     background-color: #eeeeee;
+    overflow-y: scroll;
 }
 .addTask{
     width: 100%;
@@ -58,7 +60,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
     .taskItem{
         margin-top: 20px;
         width: 70%;
@@ -78,9 +79,6 @@ body{
             img{
                 width: 20px;
                 height: 20px;
-                &:first-child{
-                    margin-right: 15px;
-                }
                 &:hover{
                     cursor: pointer;
                     opacity: 0.5;
@@ -88,24 +86,4 @@ body{
             }
         }
     }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    @import "style/phones";
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-    @import "style/tablets";
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    @import "style/laptops";
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    @import "style/desktops";
 }

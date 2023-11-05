@@ -9,17 +9,18 @@ import { Item } from './item';
 })
 export class AppComponent {
   title = 'todo_app';
-
+  taskName = '';
   allTasks:Item[] = [
     {title: 'asd', done: 'checked'},
     {title: 'second', done: ''}
   ]
   
-  addItem(title: string){
+  addItem(){
      this.allTasks.push({
-      title,
+      title: this.taskName,
       done: '',
     });
+    this.taskName = ''
   }
 
   deleteItem(index: string){

@@ -2,9 +2,9 @@
   <div class="addTask">
     <h1>ToDo-App</h1>
     <div class="addTaskWrap">
-      <input #newItem type="text" placeholder="Task title" (keyup.enter)="addItem(newItem.value);"><button (click)="addItem(newItem.value)">Add Task</button></div>
+      <input [(ngModel)]="taskName" id='newItem' type="text" placeholder="Task title" (keyup.enter)="addItem();"><button (click)="addItem()">Add Task</button></div>
     </div>
   <div class="tasks">
-      <div class='taskItem' *ngFor="let task of allTasks; index as i"><input #checkbox type="checkbox" checked="{{task.done}}" value="{{i}}">{{i}} | {{task.title}} <div class="taskItemImgWrap"><img src="../assets/img/trash-can.png" alt="Trash Icon" (click)="deleteItem(checkbox.value)"><img src="../assets/img/pencil.png" alt=""></div></div>
+      <div class='taskItem' *ngFor="let task of allTasks; index as i"><input #hidden type="hidden" value="{{i}}">{{i}} | {{task.title}} <div class="taskItemImgWrap"><img src="../assets/img/trash-can.png" alt="Trash Icon" (click)="deleteItem(hidden.value)"></div></div>
   </div>
 </div>
