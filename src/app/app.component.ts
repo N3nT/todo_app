@@ -10,10 +10,7 @@ import { Item } from './item';
 export class AppComponent {
   title = 'todo_app';
   taskName = '';
-  allTasks:Item[] = [
-    {title: 'asd', done: 'checked'},
-    {title: 'second', done: ''}
-  ]
+  allTasks:Item[] = []
   
   addItem(){
      this.allTasks.push({
